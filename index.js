@@ -613,6 +613,7 @@
 
 fetch("https://api.github.com/users")
 .then((data)=>data.json())
-.then((photo)=>photo.map((item)=>document.getElementById("container").innerHTML+=`<img src=${item.avatar_url}>`));
+.then((photo)=>photo.map((item)=>document.getElementById("container").innerHTML+=`<img src=${item.avatar_url}>`))
+
 
 
